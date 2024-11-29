@@ -18,6 +18,37 @@ def crossSection(X, Transfo, E_neutron):
     """
 
     # Your work : here
+    CrossSections = {
+        "Fission": {
+            "U235" : 590.66974,
+            "Pu239": 751.4277, 
+            "Pu241": 1018.6381,
+        },
+        "Capture": {
+            "Kr95" : 0, # NOPE
+            "Zr104": 0, # NOPE
+            "Sn134": 0, # NOPE
+            "Xe135": 2666632.5,
+            "Ce135": 35.103786,
+            "Xe136": 0, # NOPE
+            "U236" : 5.153439,
+            "U237" : 455.4131,
+            "Np237": 176.58429,
+            "U238" : 2.699, # NOPE
+            "U239" : 22.66,
+            "Np239": 45.29,
+            "Pu240": 287,
+            "Am241": 689.123,
+            "Am242": 255.7,
+            "Cm242": 19.1517,
+            "Pu243": 99.24,
+            "Am243": 0, # NOPE
+            "Cm243": 131.531,
+            "Am244": 0, # NOPE
+            "Cm244": 15.248
+        },
+    }
+
 
     # ==================================  Check arguments  ==================================
     #  Check that the nucleon/nuclide asked, and that the associated transformation exists in the database
